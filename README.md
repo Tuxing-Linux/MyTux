@@ -11,4 +11,4 @@ A simple Tamagotchi's like game featuring Tux
 
 *I packaged this version so it can be natively installed using my custom package manager(FSPM)*
 
-*FSPM(Fast and secure Package Manager) is licensed under GPLv3(Gnu Public License Version 3)*
+*FSPM(Fast and secure Package Manager) is licensed under GPLv3(Gnu General Public License Version 3)*
