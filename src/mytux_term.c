@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 #include <unistd.h>
 #include <time.h>
 
@@ -11,10 +12,18 @@ time_t ultimo_tempo; //cria uma varáivel do tipo time int, responsável por peg
 int opcao = 1;
 int fome= 0;
 int energia = 100;
+=======
+
+//funcao opcao
+int opcao = 1;
+int fome= 100;
+int sono = 100;
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 int love = 0;
 
 //funcao bolo
 
+<<<<<<< HEAD
 
 void atualizar_tempo()
 {
@@ -47,6 +56,11 @@ void gotoxy(int x, int y) {
 void cake(){
 
 
+=======
+void cake(){
+
+opcao = 0;
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 system("clear");
 
 
@@ -79,9 +93,22 @@ printf("                       ##++++++##    ##++++++##                      \n"
 
 
 
+<<<<<<< HEAD
 
 
 love++;
+=======
+fome= 0;
+printf("Tux is no more hungry\n");
+
+getchar();
+printf("Tux loved it\n");
+love++;
+getchar();
+
+
+opcao = 1;
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 }   
 
 
@@ -96,7 +123,11 @@ love++;
 void hamburguer()
 
 {
+<<<<<<< HEAD
 	
+=======
+	opcao = 0;
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 system("clear");
 
 //desenho do hamburguer
@@ -123,16 +154,28 @@ system("clear");
 			
 
           
+<<<<<<< HEAD
             
 
 			love++;
             
 
+=======
+            fome= 0;
+            printf("Tux is no more hungry\n");
+            getchar();
+            printf("Tux loved it\n");
+			love++;
+			getchar();
+            
+            opcao = 1; 
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 }
 
 
 
 
+<<<<<<< HEAD
 void loving()
 {
  system("clear");
@@ -166,10 +209,13 @@ void loving()
     love++;
     usleep(750000);
 }
+=======
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 
 
 
 
+<<<<<<< HEAD
 void eathamburguer()
 {
    system("clear");
@@ -280,6 +326,16 @@ void tuxsleep()
 void menu()
 {
 atualizar_tempo();
+=======
+
+
+
+
+
+void menu()
+{
+
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 system("clear");
 
 int comida = 0;
@@ -332,6 +388,7 @@ int comida = 0;
 
 
 
+<<<<<<< HEAD
 printf("Actions:\n");
 printf("\n");
 printf("\n [1] Hamburguer");
@@ -344,12 +401,20 @@ printf("\n Energy: %d", energia);
 printf("\n Love: %d", love);
 printf("\n");
 printf("\n");
+=======
+printf("Tux is hungry, feed him\n");
+printf("choose beetween hamburguer or cake\n");
+printf("\n [1] Hamburguer");
+printf("\n [2] Cake");
+printf("\n [3] Exit the game");
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 printf("\n");
 scanf(" %d", &comida);
 
 switch(comida)
 {
 	case 1:
+<<<<<<< HEAD
 	eathamburguer();
 	
 	break;
@@ -369,11 +434,27 @@ switch(comida)
 	break;
 	
 	case 5:
+=======
+	hamburguer();
+	menu();
+	break;
+	
+	case 2:
+	cake();
+	menu();
+	break;
+	
+	case 3:
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 	opcao = 0;
 	break;
 	
 	default:
+<<<<<<< HEAD
 	
+=======
+	menu();
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 	break;
 }
 }
@@ -388,7 +469,10 @@ int main()
 	printf("Press any key to continue\n");
 	getchar();
 	
+<<<<<<< HEAD
 	ultimo_tempo = time(NULL);
+=======
+>>>>>>> 4248517dfd3556d5c16385f7c3b98ed29abce028
 	
 	while(opcao == 1)
 	{
